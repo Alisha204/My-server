@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<title> Тақырып 31 </title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* контейнер */
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* header */
+h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #2c3e50;
+}
+
+/* мәтін */
+p {
+  line-height: 1.8;
+  font-size: 16px;
+  color: #333;
+  white-space: pre-line;
+}
+
+/* back button */
+a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #2c3e50;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+a:hover {
+  background: #1abc9c;
+  transform: scale(1.05);
+}
+
+/* scroll жеңілдету */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+body::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📘 	Кірістірілген шартты операторлар  </h1>
+
+<p>Кірістірілген шартты операторлар — бұл бір шартты оператордың ішінде тағы бір шартты оператордың орналасуы. Яғни, бір шарт тексерілгеннен кейін, оның нәтижесіне байланысты ішкі қосымша шарт тексеріледі.
+
+Бұл тәсіл бірнеше деңгейлі тексерулер жасау қажет болған жағдайда қолданылады.
+
+Алгоритмнің жалпы идеясы: алдымен негізгі шарт тексеріледі. Егер ол ақиқат (true) болса, оның ішінде орналасқан екінші шарт тексеріледі. Осылайша, шарттар бірінің ішінде бірі орналасып, күрделі логикалық шешімдер қабылдауға мүмкіндік береді.
+
+Мысалы, оқушының бағасын анықтау керек делік. Егер балл 50-ден жоғары болса, онда ол өтті деп есептеледі. Бірақ нақты бағаны анықтау үшін қосымша шарттар қолданылады.
+
+Псевдокод түрінде:
+
+Басы
+балл енгізу
+егер балл ≥ 50 болса
+ егер балл ≥ 90 болса → "5"
+ әйтпесе егер балл ≥ 75 болса → "4"
+ әйтпесе → "3"
+әйтпесе
+ "2"
+Соңы
+
+JavaScript тілінде мысал:
+
+```javascript id="k83m2d"
+let score = 82;
+
+if(score >= 50){
+    if(score >= 90){
+        console.log("Баға: 5");
+    } else if(score >= 75){
+        console.log("Баға: 4");
+    } else {
+        console.log("Баға: 3");
+    }
+} else {
+    console.log("Баға: 2");
+}
+```
+
+Бұл жерде:
+
+* бірінші `if` — негізгі шарт
+* ішіндегі `if` — кірістірілген шарт
+
+Қорытындылай келе, кірістірілген шартты операторлар күрделі есептерді шешуге көмектеседі және бірнеше шартты бір-біріне тәуелді түрде тексеруге мүмкіндік береді.
+
+
+</p>
+
+
+<a href="page1.html">← Артқа қайту</a>
+
+</div>
+
+</body>
+</html>

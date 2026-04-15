@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<title> Тақырып 28 </title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* контейнер */
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* header */
+h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #2c3e50;
+}
+
+/* мәтін */
+p {
+  line-height: 1.8;
+  font-size: 16px;
+  color: #333;
+  white-space: pre-line;
+}
+
+/* back button */
+a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #2c3e50;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+a:hover {
+  background: #1abc9c;
+  transform: scale(1.05);
+}
+
+/* scroll жеңілдету */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+body::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📘 	Жолдың ұзындығын анықтау алгоритмі </h1>
+
+<p>Жолдың (мәтіннің) ұзындығын анықтау алгоритмі — жолдағы символдар санын есептеу процесі. Яғни, берілген мәтінде қанша таңба (әріп, сан, бос орын, арнайы символдар) бар екенін табу қажет.
+
+Бұл есептің негізгі идеясы — жолды басынан соңына дейін қарап шығып, әрбір символды санау.
+
+Алгоритмнің орындалу қадамдары келесідей: алдымен жол беріледі. Содан кейін ұзындықты сақтау үшін бір айнымалы (мысалы, count) 0-ге тең деп алынады. Кейін жолдың әрбір символы бір-бірлеп қарастырылады. Әр символ кездескен сайын count мәні 1-ге артады. Жолдың соңына жеткен кезде count айнымалысы жолдың нақты ұзындығын көрсетеді.
+
+Мысалы, егер жол "Salem" болса, алгоритм былай жұмыс істейді: бірінші символ — S (count = 1), екінші — a (count = 2), үшінші — l (count = 3), төртінші — e (count = 4), бесінші — m (count = 5). Соңында нәтиже 5 болады.
+
+Псевдокод түрінде бұл алгоритмді былай жазуға болады:
+
+Басы
+жолды енгізу
+count = 0
+әрбір символ үшін:
+ count = count + 1
+соңы
+count мәнін шығару
+Соңы
+
+Бұл әдіс барлық жағдайларда дұрыс жұмыс істейді және жолдың ұзындығын анықтаудың ең қарапайым тәсілі болып табылады. Сонымен қатар, көптеген бағдарламалау тілдерінде жол ұзындығын дайын функциялар арқылы да табуға болады (мысалы, len()), бірақ алгоритмдік тұрғыдан бұл — символдарды санау процесі.
+
+</p>
+
+
+<a href="page1.html">← Артқа қайту</a>
+
+</div>
+
+</body>
+</html>
